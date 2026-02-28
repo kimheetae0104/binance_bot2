@@ -1,0 +1,50 @@
+# 환경 변수
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+.next/
+.nuxt/
+dist/
+.cache/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+logs/
+
+# 빌드 결과물
+*.o
+*.a
+*.so
+*.dylib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 기타
+*.tmp
+*.bak

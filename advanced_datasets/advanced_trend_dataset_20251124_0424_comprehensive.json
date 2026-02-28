@@ -1,0 +1,11 @@
+{
+  "creation_time": "2025-11-24T04:24:20.225417",
+  "dataset_size": 39130,
+  "feature_count": 142,
+  "collection_stats": {
+    "total_symbols_scanned": 86,
+    "successful_collections": 65,
+    "failed_collections": 21,
+    "trend_patterns_found": 3252.1385380331753,
+    "dataset_size": 39130,
+    "collection_start_time": 
