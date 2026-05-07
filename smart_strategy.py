@@ -92,12 +92,7 @@ class SmartTradingStrategy(TradingStrategy):
         if position_size < min_size:
             logger.warning(f"⚠️ 잔고 부족: ${available_balance:.2f} < 최소 투자금액 ${min_size}")
             return 0.0
-        
-        return position_size
-        
-        logger.info(f"💰 올인 매매 포지션: ${position_size:.2f} "
-                   f"({position_size/available_balance:.1%} of balance, ML확률:{signal.probability:.1%})")
-        
+
         return position_size
     
     def _calculate_split_size(self, signal: TradeSignal, available_balance: float, 
