@@ -223,7 +223,11 @@ class PaperTradingBot:
             logger.info("🔍 하이브리드 시장 스캔 시작...")
             
             # 1단계: 하이브리드 급등 감지 (실시간 모멘텀)
-            surge_signals = await detect_surge_opportunities_async(self.scan_symbols)
+            surge_signals = await detect_surge_opportunities_async(
+                self.scan_symbols,
+                binance=self.binance,
+                ml_predictor=self.ml_predictor,
+            )
             logger.info(f"⚡ 급등 신호 감지: {len(surge_signals)}개")
             
             # 2단계: 급등 신호를 ML 예측 형태로 변환
