@@ -48,3 +48,16 @@ logs/
 # 기타
 *.tmp
 *.bak
+
+# ML 모델 파일 (Git LFS 사용 권장)
+*.pkl
+*.pt
+*.pth
+*.h5
+*.onnx
+
+# 거래 데이터 / 실시간 상태 파일
+dashboard_data/
+scheduler_logs/
+data/positions.json
+data/portfolio*.json
